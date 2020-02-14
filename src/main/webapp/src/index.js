@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-// import {EventLabb} from "./EventLabb";
-//import GUIstate from "./GUIstate";
-
-import BasicAuthLabb from "./BasicAuthLabb";
+import App from "./App";
 
 
-ReactDOM.render(<BasicAuthLabb />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 
