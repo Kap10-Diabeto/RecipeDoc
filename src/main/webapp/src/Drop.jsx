@@ -1,6 +1,6 @@
 import React from "react";
 import "./Style.scss";
-import Start from "./Start.js";
+
 
 {/* <script src="https://code.jquery.com/jquery-3.4.1.js"></script> */}
 
@@ -10,7 +10,14 @@ import Start from "./Start.js";
 //     })
 // })
 
- export function myFunction(){
-    var element = document.getElementsByClassName("toggle");
-    element.classList.toggle("active");
- }
+//    export default function Drop(){
+//    var element = document.getElementsByClassName("toggle");
+//    element.classList.toggle("active");
+     
+//   }
+
+// function myFunction() {
+//    var element = document.getElementById("myDIV");
+//    element.classList.toggle("mystyle");
+// }
+

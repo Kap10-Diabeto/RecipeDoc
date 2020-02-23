@@ -1,7 +1,9 @@
 import React from "react";
 import "./Style.scss";
 import Start from "./Start.js";
-import myFunction from "./Drop.jsx";
+import Drop from "./Drop.jsx";
+import logo from './RecipeDoc.png'
+import RecipeBlock from "./Recipe-block";
 
 
 function Meny(props){
@@ -14,11 +16,15 @@ function Meny(props){
         <>
         <div className="MenuContainer">
 
+        
+        
+
         {/* <button className="btn btn1">About</button>
         <button className="btn btn2">Contact</button> */}
         <nav>
-            <div class="toggle">
-                <span onclick="myFunction()">Menu</span>
+        <img class="RecipeDoc" src={logo} alt="RecipeDoc"/> 
+            <div className="toggle">
+                <span>Menu</span>
                 </div>
             <ul>
                 <li><a href="#">Browse</a></li>
@@ -30,12 +36,13 @@ function Meny(props){
 
         </div>
 
-
-
         </>
     )
 
 }
+
+
+
     export function App(props){
         const [currentPage, setCurrentPage] = React.useState(null);
 
@@ -44,9 +51,10 @@ function Meny(props){
             setCurrentPage(id);
         }
 
-        let currentContent = null;
+        let currentContent = <RecipeBlock />;
+        
         if(currentPage === 1)
-        currentContent = <Start />
+        currentContent = <RecipeBlock />
 
         else if (currentPage === 2)
         currentContent = <p>Under construction #1</p>
