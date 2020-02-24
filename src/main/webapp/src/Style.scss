@@ -10,6 +10,7 @@ body{
     padding: 0;
 }
 
+
 .RecipeDoc{
     height: 3em;
     padding-top: 0.5em;
@@ -17,9 +18,48 @@ body{
     cursor: pointer;
 }
 
-.Block{
-    background-color: greenyellow;
-    width: 30px;
+.Block{ 
+    position: fixed;
+    display: flex;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    margin-top: 200px;
+    background-color: grey;
+    height: 30em;
+    width: 60em;
+    -webkit-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+-moz-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    
+}
+
+.info{
+    font-family: karla;
+    top: 360px;
+    background-color: white;
+    width: 57em;
+    height: 27.5em;
+    padding: 1.5em;
+    padding-bottom: 16px;
+    position: absolute;
+    transition: .5s;
+    overflow: hidden;
+    
+    
+    
+}
+
+.Courseimg{
+    position: relative;
+    width:60em;
+    z-index: 0;
+    
+}
+
+.info:hover{
+top: 0px;
+transition: .5s;
+background-color: rgba($color: #fff, $alpha: 0.9)
 }
 
 
