@@ -6,7 +6,7 @@ import logo from './RecipeDoc.png'
 import RecipeBlock from "./Recipe-block";
 
 
-function Meny(props){
+export default  function Meny(props){
     function onLinkClick(id){
         props.onNavigate(id);
     }
@@ -27,10 +27,10 @@ function Meny(props){
                 <span>Menu</span>
                 </div>
             <ul>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Account</a></li>
+                <li><a onClick={() => onLinkClick(1)}>Browse</a></li>
+                <li><a onClick={() => onLinkClick(2)}>Register</a></li>
+                <li><a onClick={() => onLinkClick(3)}>Log In</a></li>
+                <li><a onClick={() => onLinkClick(4)}>Account</a></li>
             </ul>
         </nav>
 
@@ -61,6 +61,9 @@ function Meny(props){
 
         else if (currentPage === 3)
         currentContent = <p>Under construction #2</p>
+
+        else if (currentPage === 4)
+        currentContent = <p>OKODA</p>
 
         return ( 
         <div className="app">

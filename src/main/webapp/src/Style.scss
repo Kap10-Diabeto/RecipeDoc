@@ -28,8 +28,9 @@ body{
     height: 30em;
     width: 60em;
     -webkit-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
--moz-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    -moz-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    overflow-y: hidden;
     
 }
 
@@ -44,9 +45,14 @@ box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
     position: absolute;
     transition: .5s;
     overflow: hidden;
-    
-    
-    
+}
+
+.shortinfo{
+    margin-top: 50px;
+}
+
+.r_title{
+    letter-spacing: 1.5px;
 }
 
 .Courseimg{
@@ -102,6 +108,7 @@ nav ul li a{
     padding: 20px;
     font-family: karla;
     transition: .5s;
+    cursor: pointer;
 }
 
 nav ul li a:hover{
@@ -174,6 +181,11 @@ button{
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.btn1{
+    margin-left: 0;
+    margin-top: 170px;
+}
+
 
 .btn:hover{
 
@@ -196,6 +208,7 @@ transform: translateZ(0);
     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
     
 }
+
 
 .btn1::before{
     transform-origin: left;
