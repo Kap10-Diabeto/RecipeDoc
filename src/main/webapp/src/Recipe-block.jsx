@@ -2,6 +2,7 @@ import React from "react";
 import placeholder from './placeholder.png';
 import "./Style.scss";
 import onLinkClick from  "./App";
+import navigate from "./App";
 
 export default function RecipeBlock(props){
     return(

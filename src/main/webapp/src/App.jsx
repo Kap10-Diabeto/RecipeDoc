@@ -4,6 +4,7 @@ import Start from "./Start.js";
 import Drop from "./Drop.jsx";
 import logo from './RecipeDoc.png'
 import RecipeBlock from "./Recipe-block";
+import RecipeBrowse from "./BrowsePage";
 
 
 export default  function Meny(props){
@@ -46,15 +47,15 @@ export default  function Meny(props){
     export function App(props){
         const [currentPage, setCurrentPage] = React.useState(null);
 
-        function navigate(id){
+        export function navigate(id){
             console.log(`Navigate: ${id}`)
             setCurrentPage(id);
         }
 
-        let currentContent = <RecipeBlock />;
+        let currentContent = null;
         
         if(currentPage === 1)
-        currentContent = <RecipeBlock />
+        currentContent = < RecipeBrowse/>
 
         else if (currentPage === 2)
         currentContent = <p>Under construction #1</p>
