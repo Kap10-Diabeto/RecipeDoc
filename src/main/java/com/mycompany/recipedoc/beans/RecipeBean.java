@@ -11,4 +11,6 @@ package com.mycompany.recipedoc.beans;
  */
 public class RecipeBean {
     
+    
+    
 }

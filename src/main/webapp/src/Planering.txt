@@ -1,0 +1,5 @@
+vecka 3#
+
+Göra färdigt frontend, styling samt funktionallitet
+
+Böra implementera funktioner samt login, börja med post och att hämta posts

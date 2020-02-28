@@ -19,7 +19,6 @@ public class Recipes {
     public Recipes() {
     }
     
-
     public String getTitle() {
         return title;
     }
@@ -52,7 +51,5 @@ public class Recipes {
         this.instructions = instructions;
     }
 
-    
-    
     
 }
