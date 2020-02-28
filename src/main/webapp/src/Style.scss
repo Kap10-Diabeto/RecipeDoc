@@ -10,6 +10,10 @@ body{
     padding: 0;
 }
 
+*{
+    font-family: karla;
+}
+
 
 .RecipeDoc{
     height: 3em;
@@ -17,6 +21,51 @@ body{
     padding-left: 1em;
     cursor: pointer;
 }
+
+.Rform{
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 50px;
+    
+}
+
+.b-author{
+    float: right;
+    font-size: 16px;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.Instructions{
+
+}
+
+.R_img{
+height: 400px;
+
+}
+
+.IInput{
+    margin-top: 30px
+}
+
+input[type=text]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 16px; 
+}
+
+.RecipeSite{
+    position: fixed;
+    margin-top: 100px;
+    margin: 200px;
+    padding: 40px;
+    -webkit-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    -moz-box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+    box-shadow: 6px 6px 15px -1px rgba(87,87,87,0.67);
+}
+
 
 .Block{ 
     position: fixed;

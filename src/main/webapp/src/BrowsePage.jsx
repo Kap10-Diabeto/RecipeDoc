@@ -11,7 +11,8 @@ export default function RecipeBrowse(props){
         <>
         <div id="RecipeBrowse">
 
-        <RecipeBlock />
+        <RecipeBlock onNavigate={props.onNavigate}/>
+
 
         </div>
         </>

@@ -5,6 +5,8 @@ import Drop from "./Drop.jsx";
 import logo from './RecipeDoc.png'
 import RecipeBlock from "./Recipe-block";
 import RecipeBrowse from "./BrowsePage";
+import Rform from "./RecipeInput";
+import RecipeSite from "./RecipeSite";
 
 
 export default  function Meny(props){
@@ -23,7 +25,7 @@ export default  function Meny(props){
         {/* <button className="btn btn1">About</button>
         <button className="btn btn2">Contact</button> */}
         <nav>
-        <img class="RecipeDoc" src={logo} alt="RecipeDoc"/> 
+        <img class="RecipeDoc" onClick={() => onLinkClick(1)} src={logo} alt="RecipeDoc"/> 
             <div className="toggle">
                 <span>Menu</span>
                 </div>
@@ -47,7 +49,7 @@ export default  function Meny(props){
     export function App(props){
         const [currentPage, setCurrentPage] = React.useState(null);
 
-        export function navigate(id){
+         function navigate(id){
             console.log(`Navigate: ${id}`)
             setCurrentPage(id);
         }
@@ -55,16 +57,16 @@ export default  function Meny(props){
         let currentContent = null;
         
         if(currentPage === 1)
-        currentContent = < RecipeBrowse/>
+        currentContent = <RecipeBrowse onNavigate={navigate}/>
 
         else if (currentPage === 2)
-        currentContent = <p>Under construction #1</p>
+        currentContent = <Rform />
 
         else if (currentPage === 3)
         currentContent = <p>Under construction #2</p>
 
         else if (currentPage === 4)
-        currentContent = <p>OKODA</p>
+        currentContent = <RecipeSite />
 
         return ( 
         <div className="app">

@@ -1,8 +1,9 @@
 import React from "react";
-import placeholder from './placeholder.png';
+import placeholder from './placeholder2.jpg';
 import "./Style.scss";
 import onLinkClick from  "./App";
 import navigate from "./App";
+
 
 export default function RecipeBlock(props){
     return(
@@ -14,7 +15,8 @@ export default function RecipeBlock(props){
 
             <div className="info">
 
-            <h2 className="r_title">Pannkakor</h2>    
+            <h2 className="r_title">Pannkakor <p className="b-author">Författad av:<br/>-Knarkola</p></h2>    
+            
 
         <p className="shortinfo">
         Gör traditionella tunna pannkakor genom att blanda mjöl, mjölk och ägg och 
@@ -23,7 +25,7 @@ export default function RecipeBlock(props){
         </p>
 
 
-        <button onClick={() => onLinkClick(4)} className="btn btn1">Go to Recipe</button>
+        <button onClick={() => props.onNavigate(4)} className="btn btn1">Go to Recipe</button>
 
         
 
